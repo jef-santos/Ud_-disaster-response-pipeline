@@ -51,6 +51,8 @@ def clean_data(df):
     df.drop('categories', axis = 1, inplace = True)
     df[categories.columns] = categories
     df.drop_duplicates(inplace = True)
+    
+    categories['related'] = categories['related'].apply(lambda x : 0 if x == 0 else 1)
 
     return df
 
