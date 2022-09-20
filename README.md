@@ -7,8 +7,11 @@ In this way, the project creates a web app that, from a machine learning model, 
 
 ## 2. Project Components
 ### Data
-In the "data" repository we have the raw bases: data/disaster_messages.csv and data/disaster_categories.csv.
-They pass through the ETL pipeline through the data/process_data.py file, thus generating a treated base called data/DisasterResponse.db
+In the "data" repository we have the raw bases: disaster_messages.csv and disaster_categories.csv.
+They pass through the ETL pipeline through the process_data.py file, thus generating a treated base called DisasterResponse.db
+
+### Model
+In the model repository we have the train_classifier.py pipeline responsible for creating the machine learning model entitled classifier.pkl.
 
 ## 3. Running
 
@@ -24,5 +27,3 @@ They pass through the ETL pipeline through the data/process_data.py file, thus g
 3. Run your web app: `python run.py`
 
 4. Go to http://0.0.0.0:3001/
-
-## 4. Conclusion
